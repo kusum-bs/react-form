@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./app.css";
+import "./App.css";
 import { useNavigate, Routes, Route } from "react-router-dom";
 import FormInput from "./Components/FormInput.jsx";
 import Payment from "./Components/Payment.jsx";
