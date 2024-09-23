@@ -1,0 +1,58 @@
+/* FormInput.css */
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%; /* Ensure input fields take up full width of the grid column */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Full width within the grid column */
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  @media (max-width: 768px) {
+    .formInput {
+      width: 100%; /* For mobile responsiveness */
+    }
+  }
+
+  span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+  }
+
+  input:invalid[focused="true"] {
+    border: 1px solid red;
+  }
+  
+  input:invalid[focused="true"] ~ span {
+    display: block;
+  }
